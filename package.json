@@ -13,6 +13,8 @@
     "posttest": "node -e \"require('fs').unlinkSync('node_modules/eval-stream')\" || true"
   },
   "dependencies": {
+    "readable-stream": "~1.1.13",
+    "inherits": "~2.0.1"
   },
   "devDependencies": {
     "md-code-stream": "~0.1.0"

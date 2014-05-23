@@ -8,12 +8,12 @@ Here, we read the body of an adding function from a simple
 through-stream:
 
 ```js
-var stream = require('stream');
+var PassThrough = require('stream').PassThrough || require('readable-stream/passthrough');;
 var assert = require('assert');
 
 var evalStream = require('eval-stream');
 
-var ts = new stream.PassThrough();
+var ts = new PassThrough();
 
 ts.pipe(evalStream({
     a: 1,

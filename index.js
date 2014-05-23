@@ -1,5 +1,5 @@
-var stream = require('stream');
-var inherits = require('util').inherits;
+var stream = require('readable-stream');
+var inherits = require('inherits');
 
 function EvalStream(context) {
   if (!(this instanceof EvalStream)) {
