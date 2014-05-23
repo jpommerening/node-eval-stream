@@ -1,0 +1,21 @@
+{
+  "name": "eval-stream",
+  "version": "0.0.1",
+  "description": "Evaluate streams of JavaScript code in a given context",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jpommerening/node-eval-stream.git"
+  },
+  "scripts": {
+    "pretest": "node -e \"require('fs').symlinkSync('..', 'node_modules/eval-stream')\" || true",
+    "test": "markdown_code README.md | node" ,
+    "posttest": "node -e \"require('fs').unlinkSync('node_modules/eval-stream')\" || true"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "md-code-stream": "~0.1.0"
+  }
+}
+
