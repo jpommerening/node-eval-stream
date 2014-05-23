@@ -1,6 +1,6 @@
 {
   "name": "eval-stream",
-  "version": "0.0.1",
+  "version": "0.1.0-rc1",
   "description": "Evaluate streams of JavaScript code in a given context",
   "license": "MIT",
   "repository": {
