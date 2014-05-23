@@ -8,7 +8,8 @@ Here, we read the body of an adding function from a simple
 through-stream:
 
 ```js
-var PassThrough = require('stream').PassThrough || require('readable-stream/passthrough');;
+var PassThrough = require('stream').PassThrough ||
+                  require('readable-stream/passthrough');
 var assert = require('assert');
 
 var evalStream = require('eval-stream');
