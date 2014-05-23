@@ -16,10 +16,10 @@ function EvalStream(context) {
   this.on('prefinish', function() {
     var args = Object.keys(context);
     var code = Buffer.concat(buffer);
-    var func = Function.apply(args.concat([code]));
+    var func = Function.apply(new Function(), args.concat([code]));
     try {
       this.emit('end', func.apply(this, args.map(function(arg) {
-        context[arg];
+        return context[arg];
       })));
     }
     catch (err) {

@@ -16,8 +16,8 @@ var evalStream = require('eval-stream');
 var ts = new stream.PassThrough();
 
 ts.pipe(evalStream({
-    a: '1',
-    b: '2'
+    a: 1,
+    b: 2
   }, function (err, result) {
     assert(!err);
     assert.equal(result, 3);
