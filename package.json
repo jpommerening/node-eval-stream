@@ -3,6 +3,7 @@
   "version": "0.1.0-rc1",
   "description": "Evaluate streams of JavaScript code in a given context",
   "license": "MIT",
+  "keywords": [ "eval", "stream" ],
   "repository": {
     "type": "git",
     "url": "git://github.com/jpommerening/node-eval-stream.git"
